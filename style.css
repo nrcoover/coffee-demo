@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*WEBSITE HEADER*/
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #101010;
+}
+
+.inner_header {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}    
+
+.logo_container {
+     height: 100%;
+     display: table;
+     float: left;  
+}
+
+.logo_container h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo_container h1 span {
+    font-weight: 800;
+}
+
+/*NAVIGATION LIST*/
+.nav {
+    float: right;
+    height: 100%;
+}
+
+.nav a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.nav a:last-child {
+    padding-right: 0;
+}
+
+.nav a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+/*HERO BANNER ARTICLE*/
+.hero_banner {
+    height: 850px;
+    width: 100%;
+    display: block;
+    background-image: url("./images/pexels-vitaly-vlasov-1323730.jpg");  
+    background-color: rgb(50, 131, 163);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero_banner section {
+    display: inline;
+    float: left;
+    position: relative;
+    top: 650px;
+    
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    border: solid white;
+    text-align: left;
+    font-weight: 500;
+    
+    padding: 25px;
+}
+
+.hero_banner section h2 {
+    padding-bottom: 15px;
+}
+
+section.intro_empty {
+    width: 50%;
+    visibility: hidden;
+}
+
+section.intro {
+    position: absolute;
+    float: right;
+}
+
+/*ARTICLE PRODUCTS*/
+.products {
+    background-color:rgb(12, 38, 48)
+}
+
+article h1 {
+    padding: 25px;
+    font-display: center;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+.products {
+    display: grid;
+    justify-content: center;
+    /*
+    width: auto;
+    */
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    grid-gap: 40px;
+    /*
+    flex-direction: row;
+    justify-content: center;
+    */
+    
+}
+
+.products section {
+    /*
+    grid-template-columns: minmax(500px, auto) 1fr;
+    margin: 25px;
+    */
+    padding: 25px;
+    background-position: center;
+    background-size: cover;
+    border: solid white;
+    background-blend-mode: screen;
+    backdrop-filter: blur(100px);
+    color: white;
+}
+
+.prod_1 {
+    background: url("./images/pexels-olenka-sergienko-3749174.jpg"), rgba(50, 125, 175, 0.5);
+    backdrop-filter: blur(32px);
+}
+
+.prod_2 {
+    background: url("./images/pexels-destiawan-nur-agustra-980122.jpg"), rgba(50, 125, 175, 0.5);
+    backdrop-filter: blur(32px);
+}
+
+.prod_3 {
+    background: url("./images/pexels-eneida-nieves-1254655.jpg"),  rgba(50, 125, 175, 0.5);
+}
+
+.products img {
+    width: 100%;
+    margin: 0px;
+    /*box-shadow: 3px 3px 5px 6px #101010;*/
+    object-fit: cover;
+}
